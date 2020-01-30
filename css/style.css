@@ -3,6 +3,7 @@
 }
 
 /* XS Extra Small Devices Phones */
+/* SM Small Devices Tablet */
 
 a:hover {
     text-decoration: none;
@@ -74,7 +75,13 @@ nav button:hover {
     font-size: 35px;
 }
 
-.jumbotron span {
+.divisor {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.jumbotron span,
+.about span {
     color: white;
 }
 
@@ -84,7 +91,8 @@ nav button:hover {
     transform: translateY(15px);
 }
 
-.jumbotron .line {
+.jumbotron .line,
+.about .line {
     border: 2px solid white;
 }
 
@@ -97,6 +105,9 @@ nav button:hover {
 
 .portfolio h3 {
     color: #2c3e50;
+}
+
+h3 {
     font-size: 35px;
     font-weight: 700;
 }
@@ -127,7 +138,7 @@ nav button:hover {
     display: none;
 }
 
-.row-img:hover .icon span{
+.row-img:hover .icon span {
     display: block;
 }
 
@@ -135,13 +146,17 @@ nav button:hover {
     margin-bottom: 80px;
 }
 
-/* SM Small Devices Tablets*/
+.about {
+    background-color: #1abc9c;
+}
 
-@media screen and (min-width: 768px) {
-
+.about h3 {
+    color: white;
+    padding-top: 50px;
 }
 
 /* MD Medium Devices Desktops*/
+/* LG Large Devices Desktops */
 
 @media screen and (min-width: 992px) {
     header {
@@ -167,13 +182,8 @@ nav button:hover {
         font-size: 60px;
     }
 
-    .divisor .glyphicon-star {
+    .divisor span {
         font-size: 50px;
-    }
-
-    .divisor {
-        padding-top: 25px;
-        padding-bottom: 25px;
     }
 
     .line {
@@ -182,7 +192,8 @@ nav button:hover {
         transform: translateY(20px);
     }
 
-    .jumbotron .line {
+    .jumbotron .line,
+    .about .line {
         border: 4px solid white;
     }
 
@@ -190,16 +201,11 @@ nav button:hover {
         font-size: 22px;
     }
 
-    .portfolio h3 {
+    h3 {
         font-size: 50px;
     }
 
-    .portfolio .line {
+    .portfolio .line, {
         border: 4px solid #2c3e50;
     }
-}
-
-/* LG Large Devices Desktops*/
-
-@media screen and (min-width: 1200px) {
 }
