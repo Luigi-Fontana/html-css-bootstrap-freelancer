@@ -11,7 +11,7 @@ a:hover {
 header {
     background-color: #2c3e50;
     padding-top: 5px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 header h2 {
@@ -45,9 +45,22 @@ nav button {
     border-radius: 8px;
 }
 
+nav button:hover {
+    background-color: #148f77;
+}
+
 .glyphicon-menu-hamburger {
     padding-left: 3px;
     font-size: 12px;
+}
+
+.jumbotron {
+    background-color: #1abc9c;
+}
+
+.jumbotron img {
+    width: 240px;
+    padding-top: 65px;
 }
 
 /* SM Small Devices Tablets*/
