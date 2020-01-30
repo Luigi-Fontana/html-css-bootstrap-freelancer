@@ -70,16 +70,11 @@ nav button:hover {
     font-weight: 700;
 }
 
-.divisor {
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.divisor .glyphicon-star {
+.divisor span {
     font-size: 35px;
 }
 
-.jumbotron .glyphicon-star {
+.jumbotron span {
     color: white;
 }
 
@@ -101,16 +96,43 @@ nav button:hover {
 }
 
 .portfolio h3 {
+    color: #2c3e50;
     font-size: 35px;
     font-weight: 700;
 }
 
-.portfolio .glyphycon-star {
+.portfolio span {
     color: #2c3e50;
 }
 
 .portfolio .line {
     border: 2px solid #2c3e50;
+}
+
+.row-img {
+    margin-top: 30px;
+}
+
+.row-img img {
+    border-radius: 10px;
+}
+
+.icon span{
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+.row-img:hover .icon span{
+    display: block;
+}
+
+.mrg {
+    margin-bottom: 80px;
 }
 
 /* SM Small Devices Tablets*/
