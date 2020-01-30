@@ -85,9 +85,12 @@ nav button:hover {
 
 .line {
     height: 2px;
-    border: 2px solid white;
     border-radius: 5px;
     transform: translateY(15px);
+}
+
+.jumbotron .line {
+    border: 2px solid white;
 }
 
 .jumbotron h4 {
@@ -95,6 +98,19 @@ nav button:hover {
     font-size: 18px;
     padding-top: 20px;
     padding-bottom: 50px;
+}
+
+.portfolio h3 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.portfolio .glyphycon-star {
+    color: #2c3e50;
+}
+
+.portfolio .line {
+    border: 2px solid #2c3e50;
 }
 
 /* SM Small Devices Tablets*/
@@ -140,13 +156,24 @@ nav button:hover {
 
     .line {
         height: 4px;
-        border: 4px solid white;
         border-radius: 5px;
         transform: translateY(20px);
     }
 
+    .jumbotron .line {
+        border: 4px solid white;
+    }
+
     .jumbotron h4 {
         font-size: 22px;
+    }
+
+    .portfolio h3 {
+        font-size: 50px;
+    }
+
+    .portfolio .line {
+        border: 4px solid #2c3e50;
     }
 }
 
