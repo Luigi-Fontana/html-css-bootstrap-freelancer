@@ -60,7 +60,41 @@ nav button:hover {
 
 .jumbotron img {
     width: 240px;
-    padding-top: 65px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.jumbotron h2 {
+    color: white;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.divisor {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.divisor .glyphicon-star {
+    font-size: 35px;
+}
+
+.jumbotron .glyphicon-star {
+    color: white;
+}
+
+.line {
+    height: 2px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transform: translateY(15px);
+}
+
+.jumbotron h4 {
+    color: white;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 
 /* SM Small Devices Tablets*/
