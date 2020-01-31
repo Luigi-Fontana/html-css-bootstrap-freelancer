@@ -47,7 +47,8 @@ nav button {
     border-radius: 8px;
 }
 
-nav button:hover {
+nav button:hover,
+.send:hover {
     background-color: #148f77;
     transition: all 0.2s ease-in-out;
 }
@@ -60,6 +61,7 @@ nav button:hover {
 /* JUMBOTRON */
 .jumbotron {
     background-color: #1abc9c;
+    margin-bottom: 0;
 }
 
 .jumbotron img {
@@ -200,7 +202,8 @@ h3 {
     padding-bottom: 25px;
 }
 
-.download {
+.download,
+.send {
     font-size: 18px;
     color: white;
     background-color: #1abc9c;
@@ -218,6 +221,39 @@ h3 {
 .download:hover.download span  {
     color: #2c3e50;
     transition: all 0.2s ease-in-out;
+}
+
+/* CONTACT */
+form {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.form-input {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    display: block;
+}
+
+.form-input::placeholder,
+textarea {
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+}
+
+textarea {
+    color: #777777;
+    resize: none;
+}
+
+form button {
+    margin-top: 20px;
 }
 
 /* MD Medium Devices Desktops*/
