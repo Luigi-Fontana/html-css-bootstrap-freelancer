@@ -5,6 +5,7 @@
 /* XS Extra Small Devices Phones */
 /* SM Small Devices Tablet */
 
+/* HEADER */
 a:hover {
     text-decoration: none;
 }
@@ -48,6 +49,7 @@ nav button {
 
 nav button:hover {
     background-color: #148f77;
+    transition: all 0.2s ease-in-out;
 }
 
 .glyphicon-menu-hamburger {
@@ -55,6 +57,7 @@ nav button:hover {
     font-size: 12px;
 }
 
+/* JUMBOTRON */
 .jumbotron {
     background-color: #1abc9c;
 }
@@ -71,29 +74,41 @@ nav button:hover {
     font-weight: 700;
 }
 
-.divisor span {
-    font-size: 35px;
-}
-
-.divisor {
+.div-small,
+.div-big {
     padding-top: 25px;
     padding-bottom: 25px;
+}
+
+.div-small hr {
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.div-small span {
+    font-size: 35px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.div-big hr {
+    width: 150px;
+    border: 4px solid white;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.div-big span {
+    font-size: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .jumbotron span,
 .about span {
     color: white;
-}
-
-.line {
-    height: 2px;
-    border-radius: 5px;
-    transform: translateY(15px);
-}
-
-.jumbotron .line,
-.about .line {
-    border: 2px solid white;
 }
 
 .jumbotron h4 {
@@ -103,21 +118,35 @@ nav button:hover {
     padding-bottom: 50px;
 }
 
-.portfolio h3 {
+/* PORTFOLIO */
+.portfolio h3,
+.contact h3 {
     color: #2c3e50;
 }
 
 h3 {
     font-size: 35px;
     font-weight: 700;
+    padding-top: 50px;
 }
 
-.portfolio span {
+.portfolio span,
+.contact span {
     color: #2c3e50;
 }
 
-.portfolio .line {
+.portfolio .div-big hr,
+.contact .div-big hr {
+    border: 4px solid #2c3e50;
+}
+
+.portfolio .div-small hr,
+.contact .div-small hr {
     border: 2px solid #2c3e50;
+}
+
+.mrg {
+    margin-bottom: 80px;
 }
 
 .row-img {
@@ -128,36 +157,71 @@ h3 {
     border-radius: 10px;
 }
 
-.icon span{
+.img-hover {
+    position: relative;
+}
+
+.overlay span{
     font-size: 80px;
     color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(26,188,156,.9);
+    border-radius: 10px;
     display: none;
 }
 
-.row-img:hover .icon span {
+.row-img:hover .overlay {
     display: block;
 }
 
-.mrg {
-    margin-bottom: 80px;
-}
-
+/* ABOUT */
 .about {
     background-color: #1abc9c;
 }
 
 .about h3 {
     color: white;
-    padding-top: 50px;
+}
+
+.about p {
+    font-size: 18px;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.download {
+    font-size: 18px;
+    color: white;
+    background-color: #1abc9c;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 18px 30px;
+}
+
+.download:hover {
+    background-color: white;
+    color: #2c3e50;
+    transition: all 0.2s ease-in-out;
+}
+
+.download:hover.download span  {
+    color: #2c3e50;
+    transition: all 0.2s ease-in-out;
 }
 
 /* MD Medium Devices Desktops*/
 /* LG Large Devices Desktops */
-
 @media screen and (min-width: 992px) {
     header {
         padding-top: 15px;
@@ -182,30 +246,11 @@ h3 {
         font-size: 60px;
     }
 
-    .divisor span {
-        font-size: 50px;
-    }
-
-    .line {
-        height: 4px;
-        border-radius: 5px;
-        transform: translateY(20px);
-    }
-
-    .jumbotron .line,
-    .about .line {
-        border: 4px solid white;
-    }
-
     .jumbotron h4 {
         font-size: 22px;
     }
 
     h3 {
         font-size: 50px;
-    }
-
-    .portfolio .line, {
-        border: 4px solid #2c3e50;
     }
 }
