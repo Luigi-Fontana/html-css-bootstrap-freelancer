@@ -2,9 +2,6 @@
     font-family: "Montserrat", sans-serif;
 }
 
-/* XS Extra Small Devices Phones */
-/* SM Small Devices Tablet */
-
 /* HEADER */
 a:hover {
     text-decoration: none;
@@ -81,39 +78,36 @@ nav button:hover,
     font-size: 45px;
     font-weight: 700;
 }
-
-.div-small,
-.div-big {
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-.div-small hr {
+/* creazione divisore con stella */
+.ms--star::before,
+.ms--star::after {
+    content: '';
+    display: inline-block;
     width: 100px;
-    border: 2px solid white;
-    border-radius: 3px;
-    display: inline-block;
-}
-
-.div-small span {
-    font-size: 35px;
-    padding-right: 5px;
-    padding-left: 5px;
-}
-
-.div-big hr {
-    width: 150px;
-    border: 4px solid white;
+    height: 3px;
     border-radius: 5px;
-    display: inline-block;
+    background-color: white;
+    position: relative;
+    bottom: 15px;
 }
 
-.div-big span {
-    font-size: 50px;
-    padding-right: 10px;
-    padding-left: 10px;
+.ms--star span {
+    font-size: 35px;
+    padding: 0 20px;
 }
 
+#portfolio .ms--star::before,
+#portfolio .ms--star::after,
+#contact .ms--star::before,
+#contact .ms--star::after {
+    background-color: #2c3e50;
+}
+
+#portfolio span,
+#contact span {
+    color: #2c3e50;
+}
+/* fine creazione divisore con stella */
 .jumbotron span,
 #about span {
     color: white;
@@ -136,21 +130,6 @@ h3 {
     font-size: 35px;
     font-weight: 700;
     padding-top: 50px;
-}
-
-#portfolio span,
-#contact span {
-    color: #2c3e50;
-}
-
-#portfolio .div-big hr,
-#contact .div-big hr {
-    border: 4px solid #2c3e50;
-}
-
-#portfolio .div-small hr,
-#contact .div-small hr {
-    border: 2px solid #2c3e50;
 }
 
 .mrg {
@@ -314,7 +293,7 @@ footer i:hover {
     padding-top: 25px;
     padding-bottom: 25px;
 }
-
+/* riduzione dimensione delle icone social per i dispositivi piccolissimi*/
 @media screen and (max-width: 480px) {
     footer i {
         font-size: 15px;
@@ -322,8 +301,7 @@ footer i:hover {
     }
 }
 
-/* MD Medium Devices Desktops*/
-/* LG Large Devices Desktops */
+/* aggiustamento delle dimensioni di vari font e padding per i dispositivi grandi */
 @media screen and (min-width: 992px) {
     header {
         padding-top: 15px;
@@ -353,6 +331,17 @@ footer i:hover {
     }
 
     h3 {
+        font-size: 50px;
+    }
+
+    .ms--star::before,
+    .ms--star::after {
+        width: 150px;
+        height: 4px;
+        bottom: 20px;
+    }
+
+    .ms--star span {
         font-size: 50px;
     }
 }
