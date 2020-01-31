@@ -108,8 +108,7 @@ nav button:hover,
     color: #2c3e50;
 }
 /* fine creazione divisore con stella */
-.jumbotron span,
-#about span {
+.white {
     color: white;
 }
 
